@@ -49,15 +49,46 @@
               </tbody>
             </table>
 
+ <!-- Add custom styles for buttons -->
+    <style>
+      .nav-button {
+        background-color: #4CAF50; /* Green background */
+        border: none;
+        color: white; /* White text */
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth transition */
+      }
 
-            <!-- Add navigation buttons for all sections -->
+      /* Hover effects */
+      .nav-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+
+      /* Active button effect */
+      .nav-button:active {
+        background-color: #367936;
+        box-shadow: 0 5px #666;
+        transform: translateY(2px);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Add navigation buttons for all sections -->
     <div style="text-align: center; margin-top: 20px;">
-      <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">About</button>
-      <button onclick="document.getElementById('research').scrollIntoView({ behavior: 'smooth' });">Research & Publications</button>
-      <button onclick="document.getElementById('internships').scrollIntoView({ behavior: 'smooth' });">Internships</button>
-      <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">Course Projects</button>
-      <button onclick="document.getElementById('education').scrollIntoView({ behavior: 'smooth' });">Education</button>
-      <button onclick="document.getElementById('teaching').scrollIntoView({ behavior: 'smooth' });">Teaching Experience</button>
+      <button class="nav-button" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">About</button>
+      <button class="nav-button" onclick="document.getElementById('research').scrollIntoView({ behavior: 'smooth' });">Research & Publications</button>
+      <button class="nav-button" onclick="document.getElementById('internships').scrollIntoView({ behavior: 'smooth' });">Internships</button>
+      <button class="nav-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">Course Projects</button>
+      <button class="nav-button" onclick="document.getElementById('education').scrollIntoView({ behavior: 'smooth' });">Education</button>
+      <button class="nav-button" onclick="document.getElementById('teaching').scrollIntoView({ behavior: 'smooth' });">Teaching Experience</button>
     </div>
 
             
