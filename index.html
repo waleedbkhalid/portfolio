@@ -10,79 +10,162 @@
   </head>
   <body>
 
-    <!-- Add a button to scroll down to the Education section -->
+    <!-- Add navigation buttons for all sections -->
     <div style="text-align: center; margin-top: 20px;">
-      <button onclick="document.getElementById('education').scrollIntoView({ behavior: 'smooth' });">Go to Education</button>
+      <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">About</button>
+      <button onclick="document.getElementById('research').scrollIntoView({ behavior: 'smooth' });">Research & Publications</button>
+      <button onclick="document.getElementById('internships').scrollIntoView({ behavior: 'smooth' });">Internships</button>
+      <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">Course Projects</button>
+      <button onclick="document.getElementById('education').scrollIntoView({ behavior: 'smooth' });">Education</button>
+      <button onclick="document.getElementById('teaching').scrollIntoView({ behavior: 'smooth' });">Teaching Experience</button>
     </div>
 
-    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Waleed Bin Khalid
-                </p>
-                <p>I'm a Robotics Engineer who is extremely passionate about autonomy and envisions a world, where robots and humans will coexist and cooperate for a variety of tasks, boosting both productivity and efficiency. 
-                </p> 
-                <p>
-                  I want to work on robot autonomy using vision, AI, control theory, and robot learning. I am deeply interested in intelligent robots that can be used for different kinds of autonomous applications. Apart from robots, I also have a keen interest in the applications of Artificial Intelligence in different domains such as Medicine, Economics, etc.   
-                </p>
-                <p>
-                  I have done my Master's in Robotics from the Georgia Institute of Technology, Atlanta, GA, USA. I did my bachelor's in Electrical Engineering with double minors in Physics and Mathematics from Habib University, Karachi, Pakistan. 
-                </p>
-                <p> 
-                  Apart from all of my tech interests, I love to travel alone, take photos, and try out new sports. I am an avid cricket fan and I also enjoy swimming, table tennis, and playing cards. 
-                </p>
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr id="about" style="padding:0px"> <!-- Added id for About section -->
+          <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr style="padding:0px">
+                  <td style="padding:2.5%;width:63%;vertical-align:middle">
+                    <p class="name" style="text-align: center;">
+                      Waleed Bin Khalid
+                    </p>
+                    <p>I'm a Robotics Engineer who is extremely passionate about autonomy and envisions a world, where robots and humans will coexist and cooperate for a variety of tasks, boosting both productivity and efficiency. 
+                    </p> 
+                    <p>
+                      I want to work on robot autonomy using vision, AI, control theory, and robot learning. I am deeply interested in intelligent robots that can be used for different kinds of autonomous applications. Apart from robots, I also have a keen interest in the applications of Artificial Intelligence in different domains such as Medicine, Economics, etc.   
+                    </p>
+                    <p>
+                      I have done my Master's in Robotics from the Georgia Institute of Technology, Atlanta, GA, USA. I did my bachelor's in Electrical Engineering with double minors in Physics and Mathematics from Habib University, Karachi, Pakistan. 
+                    </p>
+                    <p> 
+                      Apart from all of my tech interests, I love to travel alone, take photos, and try out new sports. I am an avid cricket fan and I also enjoy swimming, table tennis, and playing cards. 
+                    </p>
 
-                <p style="text-align:center">
-                  <a href="mailto:waleedbink1999@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=OYBEPc8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/wbk999/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://drive.google.com/file/d/1oYSunjwzD4wIHweRM5otP0Y85d3drEtp/view?usp=sharing">Resume</a> 
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/portfolioCaliImage.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/portfolioCaliImage.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
+                    <p style="text-align:center">
+                      <a href="mailto:waleedbink1999@gmail.com">Email</a> &nbsp;/&nbsp;
+                      <a href="https://scholar.google.com/citations?user=OYBEPc8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                      <a href="https://www.linkedin.com/in/wbk999/">LinkedIn</a> &nbsp;/&nbsp;
+                      <a href="https://drive.google.com/file/d/1oYSunjwzD4wIHweRM5otP0Y85d3drEtp/view?usp=sharing">Resume</a> 
+                    </p>
+                  </td>
+                  <td style="padding:2.5%;width:40%;max-width:40%">
+                    <a href="images/portfolioCaliImage.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/portfolioCaliImage.jpeg" class="hoverZoomLink"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-          <!-- Add id 'education' to the education section -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;" id="education">
+            <!-- Research & Publications Section -->
+            <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
+              <!-- Research Section -->
+              <tr>
+                <td colspan="2" style="padding:10px;vertical-align:middle">
+                  <h2>Research & Publications</h2>
+                </td>
+              </tr>
+              <!-- Add research publications here -->
+            </table>
+
+            <!-- Internships Section -->
+            <table id="internships" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
+              <!-- Internships Section -->
+              <tr>
+                <td colspan="2" style="padding:10px;vertical-align:middle">
+                  <h2>Internships</h2>
+                </td>
+              </tr>
+              <!-- Add internship details here -->
+            </table>
+
+            <!-- Course Projects Section -->
+            <table id="projects" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
+              <!-- Projects Section -->
+              <tr>
+                <td colspan="2" style="padding:10px;vertical-align:middle">
+                  <h2>Course Projects</h2>
+                </td>
+              </tr>
+              <!-- Add course projects here -->
+            </table>
+
             <!-- Education Section -->
-            <tr>
-              <td colspan="2" style="padding:10px;vertical-align:middle">
-                <h2>Education</h2>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:10px;width:70%;vertical-align:top">
-                <strong>Georgia Institute of Technology</strong><br>
-                M.S in Robotics
-              </td>
-              <td style="padding:10px;width:30%;vertical-align:top; text-align:right">
-                January 2023 - May 2024<br>
-                CGPA: 4.00/4.00
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:10px;vertical-align:top">
-                <strong>Habib University, Karachi, Pakistan.</strong><br>
-                B.S. in Electrical Engineering<br>
-                Minors: Physics and Mathematics<br>
-                <strong>Awards</strong>:  <a href="https://drive.google.com/file/d/1LYCgU711SKEu6xZpqnTpIBU3N__DmI-T/view?usp=sharing">Best Capstone Project</a>, <a href="https://drive.google.com/file/d/1LNO4Wm_7R_rQm_9X3GF-a95rJoLqEW1O/view?usp=sharing">Outstanding Teaching Assistant</a>, <a href="https://drive.google.com/file/d/1LNP20b_oPInXVcwfRUGO_sSENtjkKJi_/view?usp=sharing">Double Minor Completion</a> <br>
-              </td>
-              <td style="padding:10px;vertical-align:top; text-align:right">
-                August 2017 - June 2021<br>
-                CGPA: 3.82/4.00<br>
-                Major Rank: 03/37
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+            <table id="education" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
+              <tr>
+                <td colspan="2" style="padding:10px;vertical-align:middle">
+                  <h2>Education</h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:10px;width:70%;vertical-align:top">
+                  <strong>Georgia Institute of Technology</strong><br>
+                  M.S in Robotics
+                </td>
+                <td style="padding:10px;width:30%;vertical-align:top; text-align:right">
+                  January 2023 - May 2024<br>
+                  CGPA: 4.00/4.00
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:10px;vertical-align:top">
+                  <strong>Habib University, Karachi, Pakistan.</strong><br>
+                  B.S. in Electrical Engineering<br>
+                  Minors: Physics and Mathematics<br>
+                  <strong>Awards</strong>:  <a href="https://drive.google.com/file/d/1LYCgU711SKEu6xZpqnTpIBU3N__DmI-T/view?usp=sharing">Best Capstone Project</a>, <a href="https://drive.google.com/file/d/1LNO4Wm_7R_rQm_9X3GF-a95rJoLqEW1O/view?usp=sharing">Outstanding Teaching Assistant</a>, <a href="https://drive.google.com/file/d/1LNP20b_oPInXVcwfRUGO_sSENtjkKJi_/view?usp=sharing">Double Minor Completion</a> <br>
+                </td>
+                <td style="padding:10px;vertical-align:top; text-align:right">
+                  August 2017 - June 2021<br>
+                  CGPA: 3.82/4.00<br>
+                  Major Rank: 03/37
+                </td>
+              </tr>
+            </table>
+
+            <!-- Teaching Experience Section -->
+            <table id="teaching" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
+              <tr>
+                <td colspan="2" style="padding:10px;vertical-align:middle">
+                  <h2>Teaching Experience</h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:10px;width:65%;vertical-align:top">
+                  <strong>Graduate Teaching Assistant</strong><br>
+                  <strong>Georgia Institute of Technology</strong><br>
+                  Physics 2211 - Matter and Interactions
+                </td>
+                <td style="padding:10px;width:35%;vertical-align:top; text-align:right">
+                  January 2023 - May 2024 <br>
+                  Spring and Fall 2023, and Spring 2024.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:10px;vertical-align:top">
+                  <strong>Undergraduate Teaching Assistant</strong><br>
+                  <strong>Habib University</strong><br>
+                  Calculus II <br> 
+                  Engineering Mathematics <br> 
+                  Electrical Machines <br> 
+                  Mechanics & Thermodynamics <br> 
+                  Probability & Statistics <br> 
+                  Electric Network Analysis
+                </td>
+                <td style="padding:10px;width:35%;vertical-align:top; text-align:right">
+                  January 2019 - May 2021<br>
+                  Spring 2019 <br> 
+                  Fall 2019 <br> 
+                  Spring 2020 & Fall 2020 <br> 
+                  Spring 2020 <br> 
+                  Spring & Fall 2020 <br> 
+                  Spring 2021 
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
     </table>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" align="center">
