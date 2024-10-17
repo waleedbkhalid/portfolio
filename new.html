@@ -7,6 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      /* Basic styles for body */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: left;
+      }
+
+      .icon-button {
+        display: inline-block;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Individual button colors */
+      .email {
+        background-color: #4CAF50; /* Green */
+      }
+
+      .email:hover {
+        background-color: #45a049;
+      }
+
+      .linkedin {
+        background-color: #007bb5; /* LinkedIn blue */
+      }
+
+      .linkedin:hover {
+        background-color: #006699;
+      }
+
+      .scholar {
+        background-color: #4285F4; /* Google Scholar blue */
+      }
+
+      .scholar:hover {
+        background-color: #3367D6;
+      }
+
+      /* For larger screens */
+      @media (min-width: 600px) {
+        .about-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 50px;
+        }
+
+        .profile-pic {
+          width: 40%;
+        }
+
+        .about-content {
+          width: 55%;
+          text-align: left;
+        }
+      }
+
+    </style>
   </head>
   <body>
 
@@ -22,16 +91,32 @@
                       Waleed Bin Khalid
                     </p>
                     <p>I'm a Robotics Engineer who is extremely passionate about autonomy and envisions a world, where robots and humans will coexist and cooperate for a variety of tasks, boosting both productivity and efficiency.</p>
+                    
                     <p>I want to work on robot autonomy using vision, AI, control theory, and robot learning. I am deeply interested in intelligent robots that can be used for different kinds of autonomous applications. Apart from robots, I also have a keen interest in the applications of Artificial Intelligence in different domains such as Medicine, Economics, etc.</p>
+                    <p> </p>
                     <p>I have done my Master's in Robotics from the Georgia Institute of Technology, Atlanta, GA, USA. I did my bachelor's in Electrical Engineering with double minors in Physics and Mathematics from Habib University, Karachi, Pakistan.</p>
+                    <p> </p>
                     <p>Apart from all of my tech interests, I love to travel alone, take photos, and try out new sports. I am an avid cricket fan and I also enjoy swimming, table tennis, and playing cards.</p>
 
-                    <p style="text-align:center">
-                      <a href="mailto:waleedbink1999@gmail.com">Email</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=OYBEPc8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                      <a href="https://www.linkedin.com/in/wbk999/">LinkedIn</a> &nbsp;/&nbsp;
-                      <a href="https://drive.google.com/file/d/1oYSunjwzD4wIHweRM5otP0Y85d3drEtp/view?usp=sharing">Resume</a> 
-                    </p>
+                    
+                    <!-- Social media icons section -->
+                    <div class="social-icons" style="text-align: center;">
+                      <!-- Email button -->
+                      <a href="mailto:waleedbink1999@gmail.com" class="icon-button email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <!-- LinkedIn button -->
+                      <a href="https://www.linkedin.com/in/wbk999/" class="icon-button linkedin">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+
+                      <!-- Google Scholar button -->
+                      <a href="https://scholar.google.com/citations?user=OYBEPc8AAAAJ&hl=en" class="icon-button scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                      </a>
+                    </div>
+
                     
                     <!-- Affiliations Section -->
                     <p style="text-align:center">
@@ -60,12 +145,12 @@
                       </a>
                     </p>
                     
-                  </td>
-                  <td style="padding:2.5%;width:40%;max-width:40%">
-                    <a href="images/portfolioCaliImage.jpeg" target="_blank">
-                      <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/portfolioCaliImage.jpeg" class="hoverZoomLink" loading="lazy">
-                    </a>
-                  </td>
+                    <td style="padding:2.5%;width:40%;max-width:40%">
+                      <a href="images/portfolioCaliImage.jpeg" target="_blank">
+                        <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%; margin-top: -110px;" alt="profile photo" src="images/portfolioCaliImage.jpeg" class="hoverZoomLink" loading="lazy">
+                      </a>
+                    </td>
+                    
                 </tr>
               </tbody>
             </table>
@@ -85,6 +170,7 @@
                 cursor: pointer;
                 border-radius: 8px;
                 transition: background-color 0.3s ease;
+                font-weight: bold;
               }
 
               .nav-button:hover {
@@ -102,12 +188,13 @@
 
             <!-- Add navigation buttons for all sections -->
             <div style="text-align: center; margin-top: 0px;">
-              <button class="nav-button" onclick="document.getElementById('research').scrollIntoView({ behavior: 'smooth' });">Research & Publications</button>
+              <button class="nav-button" onclick="document.getElementById('research').scrollIntoView({ behavior: 'smooth' });">Research</button>
               <button class="nav-button" onclick="document.getElementById('internships').scrollIntoView({ behavior: 'smooth' });">Internships</button>
-              <button class="nav-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">Course Projects</button>
+              <button class="nav-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">Academic Projects</button>
               <button class="nav-button" onclick="document.getElementById('education').scrollIntoView({ behavior: 'smooth' });">Education</button>
               <button class="nav-button" onclick="document.getElementById('teaching').scrollIntoView({ behavior: 'smooth' });">Teaching Experience</button>
             </div>
+
 
 <!-- Research & Publications Section -->
 <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
@@ -241,34 +328,50 @@
     </td>
   </tr>
 
-  <!-- EPIC Lab Summer Internship -->
+
   <tr>
-    <td style="padding:10px;width:65%;vertical-align:top">
-      <strong>Summer Intern at EPIC Lab</strong><br>
-      <em>May 2023 - August 2023</em>
-    </td>
-    <td style="padding:10px;width:35%;vertical-align:top;text-align:right"></td>
-  </tr>
-  <tr>
-    <td colspan="2" style="padding:10px;vertical-align:top">
+    <td style="padding:10px;vertical-align:top">
+      <a href="https://drive.google.com/file/d/1VOAhbj0JYWm-aivxUDTKNbys2pnibXPD/view?usp=sharing">
+        <span class="papertitle">Summer Intern at EPIC Lab</span>
+      </a>
+      <br>
+      <em>Georgia Institute of Technology | Summer Intern Project</em>
+      <br>
       <p>Worked with a Ph.D. student to enhance the circuit and mechanical design quality of a hip exoskeleton. Concurrently conducted data collection (2 per week) by testing the exoskeleton on human subjects.</p>
     </td>
   </tr>
 
-  <!-- Video and PDF Report -->
+  <!-- Media: Video, PDF Report, Hip Exo Image, Ankle Exo Image -->
   <tr>
     <td colspan="2" style="padding:10px;text-align:center;">
       <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
         <tr>
           <!-- Embedded Video -->
           <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1LpR5mht57LyxhikiUKvk_eSr1liwJkUG/preview" width="300" height="200" frameborder="0" allow="autoplay" loading="lazy"></iframe>
+            <iframe src="https://drive.google.com/file/d/1LpR5mht57LyxhikiUKvk_eSr1liwJkUG/preview" width="300" height="400" frameborder="0" allow="autoplay" loading="lazy"></iframe>
             <p style="font-size:small">Watch Internship Video</p>
           </td>
+
           <!-- Embedded PDF Report -->
           <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1P_fqq2kKkgicb0TBy5I_YJrWGEyCSGdo/preview" width="300" height="200" frameborder="0" loading="lazy"></iframe>
+            <iframe src="https://drive.google.com/file/d/1P_fqq2kKkgicb0TBy5I_YJrWGEyCSGdo/preview" width="300" height="400" frameborder="0" loading="lazy"></iframe>
             <p style="font-size:small">View Full PDF Report</p>
+          </td>
+
+          <!-- Hip Exo Image -->
+          <td style="padding:10px">
+            <a href="images/hip exo.jpg" target="_blank">
+              <img src="images/hip exo.jpg" alt="Hip Exoskeleton" style="width:300px;height:400px;" loading="lazy">
+            </a>
+            <p style="font-size:small">View Hip Exoskeleton Image</p>
+          </td>
+
+          <!-- Ankle Exo Image -->
+          <td style="padding:10px">
+            <a href="images/ankle exo.jpg" target="_blank">
+              <img src="images/ankle exo.jpg" alt="Ankle Exoskeleton" style="width:300px;height:400px;" loading="lazy">
+            </a>
+            <p style="font-size:small">View Ankle Exoskeleton Image</p>
           </td>
         </tr>
       </table>
@@ -533,23 +636,43 @@
 
 <!-- Education Section -->
 <table id="education" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
-  <tr>
-    <td colspan="2" style="padding:10px;vertical-align:middle">
-      <h2>Education</h2>
-    </td>
-  </tr>
-  
-  <!-- Georgia Tech -->
-  <tr>
-    <td style="padding:10px;width:70%;vertical-align:top">
-      <strong>Georgia Institute of Technology</strong><br>
-      M.S in Robotics
-    </td>
-    <td style="padding:10px;width:30%;vertical-align:top;text-align:right">
-      January 2023 - May 2024<br>
-      CGPA: 4.00/4.00
-    </td>
-  </tr>
+ <!-- Georgia Tech -->
+<tr>
+  <td style="padding:10px;width:70%;vertical-align:top">
+    <strong>Georgia Institute of Technology</strong><br>
+    M.S in Robotics<br>
+    <p>Coursework: Introduction to Robotics Research, Robotics, Machine Learning, Deep Learning, Deep Reinforcement Learning for Intelligent Control, Machine Vision, Linear Control Systems, Artificial Intelligence, Robotics Professional Prep Seminar 1,2 and 3.</p>
+  </td>
+  <td style="padding:10px;width:30%;vertical-align:top;text-align:right">
+    January 2023 - May 2024<br>
+    CGPA: 4.00/4.00
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2" style="padding:10px;text-align:center;">
+    <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
+      <tr>
+        <!-- MS Convocation Image -->
+        <td style="padding:10px;">
+          <a href="images/MS convocation.jpeg" target="_blank">
+            <img src="images/MS convocation.jpeg" alt="MS Convocation" style="width:300px;height:auto;" loading="lazy">
+          </a>
+          <p style="font-size:small">MS Convocation Picture</p>
+        </td>
+        <!-- Gatech Degree Image -->
+        <td style="padding:10px;">
+          <a href="images/gatech degree.jpeg" target="_blank">
+            <img src="images/gatech degree.jpeg" alt="Gatech Degree" style="width:300px;height:auto;" loading="lazy">
+          </a>
+          <p style="font-size:small">Gatech Degree Certificate</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+
 
   <!-- Habib University -->
   <tr>
@@ -572,25 +695,25 @@
         <tr>
           <!-- Commencement Picture -->
           <td style="padding:10px">
-            <img src="images/BS Convocation.jpg" alt="BS Convocation" style="width:200px;height:auto;" loading="lazy">
+            <img src="images/BS Convocation.jpg" alt="BS Convocation" style="width:300px;height:auto;" loading="lazy">
             <p style="font-size:small">Convocation Picture</p>
           </td>
 
           <!-- Best Capstone Project Certificate -->
           <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1LYCgU711SKEu6xZpqnTpIBU3N__DmI-T/preview" width="200" height="200" frameborder="0" loading="lazy"></iframe>
+            <img src="images/best fyp.jpg" alt="Best Capstone Project" style="width:300px;height:auto;" loading="lazy">
             <p style="font-size:small">Best Capstone Project</p>
           </td>
 
           <!-- Outstanding Teaching Assistant Certificate -->
           <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1LNO4Wm_7R_rQm_9X3GF-a95rJoLqEW1O/preview" width="200" height="200" frameborder="0" loading="lazy"></iframe>
+            <img src="images/outstanding TA.jpg" alt="Outstanding Teaching Assistant" style="width:300px;height:auto;" loading="lazy">
             <p style="font-size:small">Outstanding Teaching Assistant</p>
           </td>
 
           <!-- Double Minor Completion Certificate -->
           <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1LNP20b_oPInXVcwfRUGO_sSENtjkKJi_/preview" width="200" height="200" frameborder="0" loading="lazy"></iframe>
+            <img src="images/double minor completion.jpg" alt="Double Minor Completion" style="width:300px;height:auto;" loading="lazy">
             <p style="font-size:small">Double Minor Completion</p>
           </td>
         </tr>
@@ -645,12 +768,13 @@
   <!-- Single Image for Teaching Experience with Clickable Link -->
   <tr>
     <td colspan="2" style="padding:10px;text-align:center;">
-      <a href="images/gta lab pic.png" target="_blank">
-        <img src="images/gta lab pic.png" alt="GTA Lab Picture" style="width:300px;height:400px;" loading="lazy">
+      <a href="images/gta lab.png" target="_blank">
+        <img src="images/gta lab.png" alt="GTA Lab Picture" style="width:400px;height:auto;" loading="lazy">
       </a>
     </td>
   </tr>
 </table>
+
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" align="center">
       <tbody>
