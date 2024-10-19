@@ -205,51 +205,57 @@
   </tr>
 
   <!-- Legged Robot Navigation Project (Research 1) -->
+  <!-- Report and Videos for the Legged Robot Navigation Project -->
   <tr>
     <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/file/d/1VOAhbj0JYWm-aivxUDTKNbys2pnibXPD/view?usp=sharing">
-        <span class="papertitle">Legged Robot Navigation in Uncertain Terrains using Deep Reinforcement Learning.</span>
-      </a>
+      <span class="papertitle">Legged Robot Navigation in Uncertain Terrains using Deep Reinforcement Learning.</span>
       <br>
       <em>Georgia Institute of Technology | Research Project</em>
       <br>
-      <p>Worked on this legged robot navigation project with Dr. Sehoon Ha at Georgia Tech. Developed and vectorized the robot environment in the RaiSim simulator using C++ and used Python bindings for integration with the deep RL training code written in PyTorch. Achieved over 95% success rate for the baseline point-to-goal navigation policy on a flat plane using PPO. Created different terrains with varying features to make a robot traversal dataset in uncertain terrains for training an imitation learning policy, which is the future works for the project.</p>
+      <p>Worked on this project, advised by Dr. Sehoon Ha, to develop a dynamic, vectorized simulation environment in RaiSim and integrated deep reinforcement learning (RL) frameworks in PyTorch to train a navigation policy on top of a pre-existing low-level locomotion policy.
+        The low-level policy controlled stepping movements via velocity commands, ensuring stable robot motion. My primary focus was developing the navigation policy, which generated these velocity commands based on inputs from the environment, such as height maps, while the low-level controller handled precise movement execution. I designed custom reward functions tailored specifically to optimize point-to-goal navigation performance, ensuring both stability and efficiency.
+        Towards the end of the project, I experimented with creating various terrain features, paving the way for future work in motion planning algorithms like RRT and A*, and the development of a dataset for imitation learning. I explored reinforcement learning, imitation learning, and motion planning concepts in depth, while also developing expertise in robot kinematics and frame transformations for legged robots through research and presentations.
+      </p>
     </td>
   </tr>
-
+  
   <!-- Report and Videos for the Legged Robot Navigation Project -->
   <tr>
     <td colspan="2" style="padding:10px;vertical-align:middle">
       <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
         <tr>
-          <!-- Inline PDF Viewer for Report -->
+          <!-- Image replacing the PDF display -->
           <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1VOAhbj0JYWm-aivxUDTKNbys2pnibXPD/preview" style="width:300px;height:200px;" frameborder="0" loading="lazy"></iframe>
-            <p style="font-size:small">View Full Project Report</p>
+            <a href="images/capstone proj report.png" target="_blank">
+              <img src="images/capstone proj report.png" alt="Capstone Project Report" style="width:300px;height:200px;" loading="lazy">
+            </a>
+            <p style="font-size:small">Project Report</p>
           </td>
-          
+  
           <!-- Embedded Video 1 from Google Drive -->
           <td style="padding:10px">
             <iframe src="https://drive.google.com/file/d/1V7_6QbQywA20UvEP3XbFfvrYVioojA_F/preview" width="300" height="200" frameborder="0" allow="autoplay" loading="lazy"></iframe>
-            <p style="font-size:small">Watch Video 01</p>
+            <p style="font-size:small">Lateral View Video</p>
           </td>
-          
+  
           <!-- Embedded Video 2 from Google Drive -->
           <td style="padding:10px">
             <iframe src="https://drive.google.com/file/d/1V88QNcGsLN44wQ76EdNuBSbziz7VqR5I/preview" width="300" height="200" frameborder="0" allow="autoplay" loading="lazy"></iframe>
-            <p style="font-size:small">Watch Video 02</p>
+            <p style="font-size:small">Top View Video</p>
           </td>
         </tr>
       </table>
     </td>
   </tr>
+  
+
+  
+  
 
 <!-- An AI Model for Instance Segmentation and Tooth Numbering on OPGs (Research 2) -->
 <tr>
   <td style="padding:10px;vertical-align:top">
-    <a href="https://europepmc.org/article/med/36705317">
-      <span class="papertitle">An Artificial Intelligence Model for Instance Segmentation and Tooth Numbering on Orthopantomograms.</span>
-    </a>
+    <span class="papertitle">An Artificial Intelligence Model for Instance Segmentation and Tooth Numbering on Orthopantomograms</span>
     <br>
     <em>Niha Adnan, Waleed Bin Khalid, Fahad Umer | International Journal of Computerized Dentistry 2023</em>
     <br>
@@ -262,15 +268,33 @@
   <td colspan="2" style="padding:10px;vertical-align:middle">
     <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
       <tr>
-        <!-- Image 01 for the Research -->
+        
+        <!-- Image 01: AI Model Instance Segmentation -->
         <td style="padding:10px">
           <a href="images/5 - mask.png" target="_blank">
             <img src="images/5 - mask.png" alt="AI Model for Instance Segmentation" style="width:300px;height:200px;" loading="lazy">
           </a>
-          <p style="font-size:small">Visualization of Instance Segmentation and Tooth Numbering</p>
+          <p style="font-size:small">Actual Mask</p>
         </td>
+
+        <!-- Image 02: Visualization of Instance Segmentation -->
+        <td style="padding:10px">
+          <a href="images/tooth seg.jpeg" target="_blank">
+            <img src="images/tooth seg.jpeg" alt="Tooth Segmentation Visualization" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Instance Segmentation of Teeth</p>
+        </td>
+
+        <!-- Image 03: Object Detection Visualization -->
+        <td style="padding:10px">
+          <a href="images/obj detect.jpeg" target="_blank">
+            <img src="images/obj detect.jpeg" alt="Object Detection Visualization" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Teeth Detection and Numeric Labeling</p>
+        </td>
+
         
-        <!-- AIpaperImage as Link to the Published Article -->
+        <!-- Image 04: Link to Published Article -->
         <td style="padding:10px">
           <a href="https://europepmc.org/article/med/36705317" target="_blank">
             <img src="images/AIpaperImage.png" alt="Link to Article" style="width:300px;height:200px;" loading="lazy">
@@ -284,40 +308,56 @@
 
 
 <!-- Contactless Vitals Measurement Robot (Research 3) -->
+<!-- Contactless Vitals Measurement Robot (Research 3) -->
 <tr>
   <td style="padding:10px;vertical-align:top">
-    <a href="https://ieeexplore.ieee.org/document/9738523">
-      <span class="papertitle">Contactless Vitals Measurement Robot.</span>
-    </a>
+    <span class="papertitle">Contactless Vitals Measurement Robot.</span>
     <br>
     <em>Waleed Bin Khalid, Amna Anwar, Owais Talaat Waheed | International Conference on Automation, Robotics, and Applications 2022</em>
     <br>
-    <p>Researched the use of Image processing for photoplethysmography to develop a non-contact vitals measurement robot, equipped with an Ackermann drive for my undergraduate final year project. Presented the work at ICARA 2022 as the first author and also received the Best Capstone Project award for this work.</p>
+    <p>Designed and developed a contactless vitals measurement robot equipped with an Ackermann drive for my undergraduate final year project. The robot utilised a camera, machine learning, and signal processing to measure vitals and decrease medical staff contact time with contagious patients. The system reported around 70% accuracy for Blood Pressure, and 90% for Heart Rate, Oxygen Saturation, and Temperature. I presented the work as the first author at ICARA 2022 and received the Best Capstone Project award for this work.</p>
   </td>
 </tr>
 
-<!-- Thesis, Video, and Publication Link for the Contactless Vitals Measurement Project -->
+<!-- Media: Thesis Image, Paper Link, Robot Design Image, YouTube Video -->
 <tr>
   <td colspan="2" style="padding:10px;vertical-align:middle">
     <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
       <tr>
-        <!-- Inline PDF Viewer for Thesis -->
+        <!-- Thesis Image -->
         <td style="padding:10px">
-          <iframe src="https://drive.google.com/file/d/1dmpo7BZbzWkDmhA3sYa2WLOv3P7I_K-t/preview" style="width:300px;height:200px;" frameborder="0" loading="lazy"></iframe>
+          <a href="images/contactless vitals thesis pic.png" target="_blank">
+            <img src="images/contactless vitals thesis pic.png" alt="Contactless Vitals Thesis" style="width:300px;height:200px;" loading="lazy">
+          </a>
           <p style="font-size:small">View Full Thesis</p>
         </td>
         
-        <!-- Display for IEEE Publication Link -->
+        <!-- IEEE Paper Link -->
         <td style="padding:10px">
           <a href="https://ieeexplore.ieee.org/document/9738523" target="_blank">
             <img src="images/ieeePageDisplay.png" alt="IEEE Publication" style="width:300px;height:200px;" loading="lazy">
           </a>
           <p style="font-size:small">View IEEE Publication</p>
         </td>
+
+        <!-- Robot Design Image -->
+        <td style="padding:10px">
+          <a href="images/contactless vitals measurement design.png" target="_blank">
+            <img src="images/contactless vitals measurement design.png" alt="Contactless Vitals Robot Design" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Robot Design Image</p>
+        </td>
+
+        <!-- YouTube Video -->
+        <td style="padding:10px">
+          <iframe src="https://www.youtube.com/embed/yuYqhCQHWI4" width="300" height="200" frameborder="0" allow="autoplay" loading="lazy"></iframe>
+          <p style="font-size:small">Watch Data Collection Video</p>
+        </td>
       </tr>
     </table>
   </td>
 </tr>
+
 
 
 <!-- Internships Section -->
@@ -329,144 +369,174 @@
   </tr>
 
 
+  
   <tr>
     <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/file/d/1VOAhbj0JYWm-aivxUDTKNbys2pnibXPD/view?usp=sharing">
-        <span class="papertitle">Summer Intern at EPIC Lab</span>
-      </a>
+      <span class="papertitle">Summer Intern at EPIC Lab</span>
       <br>
-      <em>Georgia Institute of Technology | Summer Intern Project</em>
+      <em>Georgia Institute of Technology</em>
       <br>
-      <p>Worked with a Ph.D. student to enhance the circuit and mechanical design quality of a hip exoskeleton. Concurrently conducted data collection (2 per week) by testing the exoskeleton on human subjects.</p>
+      <p>Worked with a Ph.D. student to enhance the circuit and mechanical design quality of a hip exoskeleton, resolving electronic and mechanical design issues by cleaning up circuits, fabricating new PCBs, 3D-printing worn-out clippers, and reinforcing components to reduce vibrations and eliminate circuit failures. Concurrently conducted data collection, amassing 60 hours of respiratory and EMG data from human subject trials, required by lab researchers to assess metabolic costs and muscle activity.</p>
     </td>
   </tr>
+  
+  
+    <!-- Media: Video, Report Image, Hip Exo Image, Ankle Exo Image -->
+ <!-- Media: Video, Report Image, Hip Exo Image, Ankle Exo Image for Internship -->
+<tr>
+  <td colspan="2" style="padding:10px;text-align:center;">
+    <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
+      <tr>
+        <!-- Embedded Video -->
+        <td style="padding:10px">
+          <iframe src="https://drive.google.com/file/d/1LpR5mht57LyxhikiUKvk_eSr1liwJkUG/preview" width="300" height="400" frameborder="0" allow="autoplay" loading="lazy"></iframe>
+          <p style="font-size:small">Watch Internship Video</p>
+        </td>
 
-  <!-- Media: Video, PDF Report, Hip Exo Image, Ankle Exo Image -->
-  <tr>
-    <td colspan="2" style="padding:10px;text-align:center;">
-      <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
-        <tr>
-          <!-- Embedded Video -->
-          <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1LpR5mht57LyxhikiUKvk_eSr1liwJkUG/preview" width="300" height="400" frameborder="0" allow="autoplay" loading="lazy"></iframe>
-            <p style="font-size:small">Watch Internship Video</p>
-          </td>
+        <!-- Report Image replacing the PDF display -->
+        <td style="padding:10px">
+          <a href="https://drive.google.com/file/d/1P_fqq2kKkgicb0TBy5I_YJrWGEyCSGdo/view?usp=sharing" target="_blank">
+            <img src="images/epic lab report.png" alt="EPIC Lab Report" style="width:300px;height:400px;" loading="lazy">
+          </a>
+          <p style="font-size:small">View Full Internship Report</p>
+        </td>
 
-          <!-- Embedded PDF Report -->
-          <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1P_fqq2kKkgicb0TBy5I_YJrWGEyCSGdo/preview" width="300" height="400" frameborder="0" loading="lazy"></iframe>
-            <p style="font-size:small">View Full PDF Report</p>
-          </td>
+        <!-- Hip Exo Image -->
+        <td style="padding:10px">
+          <a href="images/hip exo.jpg" target="_blank">
+            <img src="images/hip exo.jpg" alt="Hip Exoskeleton" style="width:300px;height:400px;" loading="lazy">
+          </a>
+          <p style="font-size:small">View Hip Exoskeleton Image</p>
+        </td>
 
-          <!-- Hip Exo Image -->
-          <td style="padding:10px">
-            <a href="images/hip exo.jpg" target="_blank">
-              <img src="images/hip exo.jpg" alt="Hip Exoskeleton" style="width:300px;height:400px;" loading="lazy">
-            </a>
-            <p style="font-size:small">View Hip Exoskeleton Image</p>
-          </td>
+        <!-- Ankle Exo Image -->
+        <td style="padding:10px">
+          <a href="images/ankle exo.jpg" target="_blank">
+            <img src="images/ankle exo.jpg" alt="Ankle Exoskeleton" style="width:300px;height:400px;" loading="lazy">
+          </a>
+          <p style="font-size:small">View Ankle Exoskeleton Image</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
 
-          <!-- Ankle Exo Image -->
-          <td style="padding:10px">
-            <a href="images/ankle exo.jpg" target="_blank">
-              <img src="images/ankle exo.jpg" alt="Ankle Exoskeleton" style="width:300px;height:400px;" loading="lazy">
-            </a>
-            <p style="font-size:small">View Ankle Exoskeleton Image</p>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+  </table>
+  
 
 <!-- Course Projects Section -->
 <table id="projects" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
   <tr>
     <td colspan="2" style="padding:10px;vertical-align:middle">
-      <h2>Course Projects</h2>
+      <h2>Academmic Projects</h2>
     </td>
   </tr>
 
   <!-- Robot Maze Navigation for Variable Maze Structures -->
-  <tr>
-    <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/drive/folders/1p7Izra3qOSU7WyL1co_GRrluohgriEsT?usp=sharing">
-        <span class="papertitle">Robot Maze Navigation for Variable Maze Structures.</span>
-      </a>
-      <br>
-      <em>Georgia Institute of Technology | ECE 7785 - Introduction to Robotics Research course project</em>
-      <br>
-      <p>The main challenge was that the maze used for the demonstration was unknown. Implemented a combination of Bug algorithms, collision avoidance, and CNN-based Image classification to make a solution that was invariant to the maze structure, starting and ending point.</p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" style="padding:10px;vertical-align:middle">
-      <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
-        <tr>
-          <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1b4P67eACJC3HYH3cS7nW_fX0XIY0ffdR/preview" width="300" height="200" frameborder="0" allow="autoplay" loading="lazy"></iframe>
-            <p style="font-size:small">Watch Project Video</p>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+<tr>
+  <td style="padding:10px;vertical-align:top">
+    <span class="papertitle">Robot Maze Navigation for Variable Maze Structures.</span>
+    <br>
+    <p>Tackled the challenge of navigating an unknown maze by implementing a combination of the Bug algorithm, collision avoidance, and CNN-based image classification to create a solution invariant to the maze structure, starting point, and end point. Optimized a CNN to detect signs with 99% accuracy by augmenting for invariance and extensively preprocessing the data. The motion plan integrated CNN-generated maneuvering commands, lidar-based wall detection for collision avoidance, the Bug algorithm as a fallback, and PID control to ensure accurate straight-line movement and sharp turns, achieving 100% navigation success.</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2" style="padding:10px;vertical-align:middle">
+    <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
+      <tr>
+        <td style="padding:10px">
+          <iframe src="https://drive.google.com/file/d/1b4P67eACJC3HYH3cS7nW_fX0XIY0ffdR/preview" width="400" height="300" frameborder="0" allow="autoplay" loading="lazy"></iframe>
+          <p style="font-size:small">Project Video</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
 
   <!-- Manipulator Control using Deep Reinforcement and Imitation Learning -->
   <tr>
     <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/drive/folders/1p7Izra3qOSU7WyL1co_GRrluohgriEsT?usp=sharing">
-        <span class="papertitle">Manipulator Control using Deep Reinforcement and Imitation Learning.</span>
-      </a>
+      <span class="papertitle">Learning Robot Tasks From Videos</span>
       <br>
-      <em>Georgia Institute of Technology | CS 8803 - Deep Reinforcement Learning course project</em>
-      <br>
-      <p>Studied manipulator control using reinforcement and imitation learning via MLPs, CNNs, and transformers on the ManiSkill2 dataset. Reduced the covariate shift of the performance using sequential learning and obtained a 20 percent success rate as well. Implemented PPO-based RL control and achieved 100 percent accuracy for a selected task.</p>
+      <p>Studied manipulator control using reinforcement and imitation learning via MLPs, CNNs, and transformers on the ManiSkill2 dataset. Mitigated covariate shift in the Franka Emika Panda Arm’s pick-and-place task through an encoder transformer for behavior cloning, achieving a 20% success rate with imitation learning, with 80% showing either correct picking or placing. Implemented PPO-based reinforcement learning control, achieving 100% task success for a selected task.</p>
     </td>
   </tr>
+  
+  <!-- Media: Video and Project Report Image -->
   <tr>
     <td colspan="2" style="padding:10px;vertical-align:middle">
       <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
         <tr>
+          <!-- Embedded Video -->
           <td style="padding:10px">
             <iframe src="https://drive.google.com/file/d/1ST4gQUVq2VMVshvh5eF5Bj4kHOdr9UXL/preview" width="300" height="200" frameborder="0" allow="autoplay" loading="lazy"></iframe>
-            <p style="font-size:small">Watch Project Video</p>
+            <p style="font-size:small">Project Video</p>
           </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-
-  <!-- Road Image Segmentation with Supervised & Unsupervised Methods -->
-  <tr>
-    <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/drive/folders/1p7Izra3qOSU7WyL1co_GRrluohgriEsT?usp=sharing">
-        <span class="papertitle">Road Image Segmentation with Supervised & Unsupervised Methods.</span>
-      </a>
-      <br>
-      <em>Georgia Institute of Technology | CS 7641 - Machine Learning course project</em>
-      <br>
-      <p>Deployed different supervised & unsupervised methods for segmentation of road images in autonomous driving. The methods employed included K-Means, DB scan, Gaussian Mixture Models, and U-NET. The main libraries used included Scikit-Learn, Numpy, and PyTorch. The dataset used was the CARLA road images dataset.</p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" style="padding:10px;vertical-align:middle">
-      <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
-        <tr>
+  
+          <!-- Project Report Image -->
           <td style="padding:10px">
-            <a href="images/road Image.png" target="_blank">
-              <img src="images/road Image.png" alt="Road Image Segmentation" style="width:300px;height:200px;" loading="lazy">
+            <a href="https://drive.google.com/drive/folders/1T5tiQO0bLbTUItd1noYc_CKOu-KPxBBm" target="_blank">
+              <img src="images/manipulator proj.png" alt="Manipulator Project Report" style="width:300px;height:200px;" loading="lazy">
             </a>
-            <p style="font-size:small">Road Image Segmentation Visualization</p>
-          </td>
-          <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1VQ_T2tJRXxCKPTw_OntqRXtBdwHXfxGX/preview" style="width:300px;height:200px;" frameborder="0" loading="lazy"></iframe>
-            <p style="font-size:small">View Full PDF Report</p>
+            <p style="font-size:small">Project Report</p>
           </td>
         </tr>
       </table>
     </td>
   </tr>
+  
+
+<!-- Road Image Segmentation with Supervised & Unsupervised Methods -->
+<tr>
+  <td style="padding:10px;vertical-align:top">
+    <span class="papertitle">Road Image Segmentation with Supervised & Unsupervised Methods</span>
+    <br>
+    <p>Deployed supervised and unsupervised methods like K-Means, DB Scan, Gaussian Mixture Models, and U-NET for segmenting road images from the CARLA dataset. Achieved a 95% Dice Score using U-NET for instance segmentation and a Silhouette Coefficient of 0.5 with K-Means and Gaussian Mixture Models.</p>
+  </td>
+</tr>
+
+<!-- Media: Road Image Segmentation Visualization and Report -->
+<tr>
+  <td colspan="2" style="padding:10px;vertical-align:middle; text-align:center;">
+    <table style="width:1200px;border:0px;border-spacing:0px;text-align:center;margin:auto;">
+      <tr>
+        <!-- Actual Image -->
+        <td style="padding:10px; text-align:center;">
+          <a href="images/Actual Image.png" target="_blank">
+            <img src="images/Actual Image.png" alt="Actual Image" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Actual Image</p>
+        </td>
+
+        <!-- Actual Mask -->
+        <td style="padding:10px; text-align:center;">
+          <a href="images/Actual Mask.png" target="_blank">
+            <img src="images/Actual Mask.png" alt="Actual Mask" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Actual Mask</p>
+        </td>
+
+        <!-- Predicted Mask -->
+        <td style="padding:10px; text-align:center;">
+          <a href="images/Predicted Mask.png" target="_blank">
+            <img src="images/Predicted Mask.png" alt="Predicted Mask" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Predicted Mask</p>
+        </td>
+
+        <!-- Report Display -->
+        <td style="padding:10px; text-align:center;">
+          <a href="https://drive.google.com/file/d/1VQ_T2tJRXxCKPTw_OntqRXtBdwHXfxGX/preview" target="_blank">
+            <img src="images/road image seg report.png" alt="Road Image Segmentation Report" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Report</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
 
   <!-- Simultaneous Location and Mapping using Turtlebot 3 and ROS 2 -->
   <tr>
@@ -475,9 +545,7 @@
         <span class="papertitle">Simultaneous Location and Mapping using Turtlebot 3 and ROS 2.</span>
       </a>
       <br>
-      <em>Georgia Institute of Technology | ECE 7785 - Introduction to Robotics Research course project</em>
-      <br>
-      <p>Developed a map by teleoperating the robot in the physical and Gazebo environment. Tuned navigation stack parameters in ROS2 for the robot to traverse the map smoothly and reach 3 randomly provided locations on the map.</p>
+      <p>Developed a 2D map by teleoperating the robot in both physical and Gazebo environments, utilizing the Cartographer algorithm. Tuned ROS2 SLAM parameters to ensure the robot could smoothly traverse the map and autonomously navigate to three randomly provided locations within a 7x6 feet arena with barriers.</p>
     </td>
   </tr>
   <tr>
@@ -497,34 +565,36 @@
     </td>
   </tr>
 
-  <!-- Cartpole Control Using Deep Reinforcement Learning -->
-  <tr>
-    <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/drive/folders/1p7Izra3qOSU7WyL1co_GRrluohgriEsT?usp=sharing">
-        <span class="papertitle">Cartpole Control Using Deep Reinforcement Learning.</span>
-      </a>
-      <br>
-      <em>Georgia Institute of Technology | CS 7643 - Deep Learning course project</em>
-      <br>
-      <p>Did a comparative study of Deep Q-learning and its variations and PPO on the classical cartpole control problem using Open AI Gym.</p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" style="padding:10px;vertical-align:middle">
-      <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
-        <tr>
-          <td style="padding:10px">
-            <iframe src="https://drive.google.com/file/d/1pXP1s9iPr3aNRjS65cGPXwxlBu6W9ra-/preview" style="width:300px;height:200px;" frameborder="0" loading="lazy"></iframe>
-            <p style="font-size:small">View Full PDF Report</p>
-          </td>
-          <td style="padding:10px">
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/aSomRKi8ldk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            <p style="font-size:small">Watch Cartpole Video</p>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+<!-- Cartpole Control Using Deep Reinforcement Learning -->
+<tr>
+  <td style="padding:10px;vertical-align:top">
+    <span class="papertitle">Cartpole Control Using Deep Reinforcement Learning</span>
+    <br>
+    <p>Conducted a comparative study of Deep Q-learning, its variations (DQN, DDQN, Dueling DDQN, CNN-DQN), and Proximal Policy Optimization (PPO) on the classical CartPole control problem using OpenAI Gym. Results showed that PPO and DDQN achieved perfect scores of 500 across 100 episodes, outperforming DQN variations. CNN-DQN struggled with convergence, while PPO demonstrated superior stability by preventing drastic policy changes. The study provided valuable insights into the performance differences of policy-based and Q-learning methods for reinforcement learning tasks.</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2" style="padding:10px;vertical-align:middle">
+    <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
+      <tr>
+        <!-- Report Image with Link to PDF -->
+        <td style="padding:10px">
+          <a href="https://drive.google.com/file/d/1pXP1s9iPr3aNRjS65cGPXwxlBu6W9ra-/preview" target="_blank">
+            <img src="images/cartpole project report.png" alt="Cartpole Project Report" style="width:300px;height:200px;" loading="lazy">
+          </a>
+          <p style="font-size:small">Project Report</p>
+        </td>
+        
+        <!-- Cartpole Video -->
+        <td style="padding:10px">
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/aSomRKi8ldk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <p style="font-size:small">Project Video</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
 
   <!-- Legged Robot and Humanoid Robot Control using Deep Reinforcement Learning and Imitation Learning in MuJoCo -->
   <tr>
@@ -532,8 +602,6 @@
       <a href="https://drive.google.com/file/d/1I58gJm3NWNfTmiC7EQd0LxJidSJRdBum/preview">
         <span class="papertitle">Legged Robot and Humanoid Robot Control using Deep Reinforcement Learning and Imitation Learning in MuJoCo.</span>
       </a>
-      <br>
-      <em>Georgia Institute of Technology | CS 8803 - Deep Reinforcement Learning Assignments</em>
       <br>
       <p>Implemented legged robot control with RL, curriculum learning, and custom reward functions to make a quadruped robot move over obstacles with increasing height. Implemented two walking modes (normal and stealthy) for a humanoid robot using imitation learning and reference state initialization.</p>
     </td>
@@ -557,8 +625,6 @@
       <a href="https://drive.google.com/file/d/1ShYIWfRgEG_byB5lhU0caR3iy0hzhxL_/view?usp=sharing">
         <span class="papertitle">Diffusion Model as Robot Action Policy.</span>
       </a>
-      <br>
-      <em>Deep Learning Project | (IL, Robot Task Planning) | Oct 2023 - Dec 2023</em>
       <br>
       <p>Implemented a diffusion model to imitate demonstrations and model action distribution given states, obtaining 100% accuracy in guiding a point agent to push a T-shaped block onto a T-shaped outline.</p>
     </td>
@@ -585,17 +651,14 @@
   </tr>
 
   <!-- Autonomous Line Following Ball Throwing Robot -->
-  <tr>
-    <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/drive/folders/1p7Izra3qOSU7WyL1co_GRrluohgriEsT?usp=sharing">
-        <span class="papertitle">Autonomous Line Following Ball Throwing Robot.</span>
-      </a>
-      <br>
-      <em>Habib University | Microcontrollers and Interfacing course project</em>
-      <br>
-      <p>Developed this robot with Arduino, IR sensors, self-fabricated motor drivers, and regulators using discrete electronic components. Used a differential drive for mobility, and a flywheel mechanism for shooting.</p>
-    </td>
-  </tr>
+<tr>
+  <td style="padding:10px;vertical-align:top">
+    <span class="papertitle">Autonomous Line Following Ball Throwing Robot.</span>
+    <br>
+    <p>Developed a robot using Arduino, IR sensors, self-fabricated motor drivers, and regulators with discrete components. Implemented differential drive for mobility and a flywheel mechanism for shooting. Calibrated motor encoders to ensure accurate odometry readings, enabling the robot to autonomously traverse a 4x8 feet arena and drop balls into four hoops within three minutes, guided by line-following and PID control.</p>
+  </td>
+</tr>
+
   <tr>
     <td colspan="2" style="padding:10px;vertical-align:middle">
       <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
@@ -610,18 +673,16 @@
   </tr>
 
   <!-- HAWAI FIRING: Shooting Game Developed Using C++ -->
-  <tr>
-    <td style="padding:10px;vertical-align:top">
-      <a href="https://drive.google.com/drive/folders/1p7Izra3qOSU7WyL1co_GRrluohgriEsT?usp=sharing">
-        <span class="papertitle">HAWAI FIRING: Shooting Game Developed Using C++.</span>
-      </a>
-      <br>
-      <em>Habib University | Object Oriented Programming course project</em>
-      <br>
-      <p>Developed this game using C++ and SDL 2.0 library. The primary goal was to exercise the OOP design principles, maintain clean code practices, design and implement UML diagrams for code maintenance, and develop game graphics from scratch.</p>
-    </td>
-  </tr>
-  <tr>
+<!-- HAWAI FIRING: Shooting Game Developed Using C++ -->
+<tr>
+  <td style="padding:10px;vertical-align:top">
+    <span class="papertitle">HAWAI FIRING: Shooting Game Developed Using C++.</span>
+    <br>
+    <p>Developed a bubble shooting game using C++ and the SDL 2.0 library to practice OOP design principles, clean code practices, and maintainability through UML diagrams. Created the game from scratch, including multiple levels, menu screens, saving mechanisms, and object graphics. Implemented game physics using kinematic principles and collision detection strategies.
+    </p>
+  </td>
+</tr>
+
     <td colspan="2" style="padding:10px;vertical-align:middle">
       <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
         <tr>
@@ -636,43 +697,52 @@
 
 <!-- Education Section -->
 <table id="education" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
- <!-- Georgia Tech -->
-<tr>
-  <td style="padding:10px;width:70%;vertical-align:top">
-    <strong>Georgia Institute of Technology</strong><br>
-    M.S in Robotics<br>
-    <p>Coursework: Introduction to Robotics Research, Robotics, Machine Learning, Deep Learning, Deep Reinforcement Learning for Intelligent Control, Machine Vision, Linear Control Systems, Artificial Intelligence, Robotics Professional Prep Seminar 1,2 and 3.</p>
-  </td>
-  <td style="padding:10px;width:30%;vertical-align:top;text-align:right">
-    January 2023 - May 2024<br>
-    CGPA: 4.00/4.00
-  </td>
-</tr>
+  <tr>
+    <td colspan="2" style="padding:10px;vertical-align:middle">
+      <h2>Education</h2>
+    </td>
+  </tr>
 
-<tr>
-  <td colspan="2" style="padding:10px;text-align:center;">
-    <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
-      <tr>
-        <!-- MS Convocation Image -->
-        <td style="padding:10px;">
-          <a href="images/MS convocation.jpeg" target="_blank">
-            <img src="images/MS convocation.jpeg" alt="MS Convocation" style="width:300px;height:auto;" loading="lazy">
-          </a>
-          <p style="font-size:small">MS Convocation Picture</p>
-        </td>
-        <!-- Gatech Degree Image -->
-        <td style="padding:10px;">
-          <a href="images/gatech degree.jpeg" target="_blank">
-            <img src="images/gatech degree.jpeg" alt="Gatech Degree" style="width:300px;height:auto;" loading="lazy">
-          </a>
-          <p style="font-size:small">Gatech Degree Certificate</p>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
+  <!-- Georgia Tech -->
+  <tr>
+    <td style="padding:10px;width:70%;vertical-align:top">
+      <strong>Georgia Institute of Technology</strong><br>
+      M.S in Robotics<br>
+      <p>Coursework: Introduction to Robotics Research, Robotics, Machine Learning, Deep Learning, Deep Reinforcement Learning for Intelligent Control, Machine Vision, Linear Control Systems, Artificial Intelligence, Robotics Professional Prep Seminar 1,2 and 3.</p>
+    </td>
+    <td style="padding:10px;width:30%;vertical-align:top;text-align:right">
+      January 2023 - May 2024<br>
+      CGPA: 4.00/4.00
+    </td>
+  </tr>
 
-
+  <!-- MS Convocation, Degree, and Transcript Images -->
+  <tr>
+    <td colspan="2" style="padding:10px;text-align:center;">
+      <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
+        <tr>
+          <td style="padding:10px;">
+            <a href="images/MS convocation.jpeg" target="_blank">
+              <img src="images/MS convocation.jpeg" alt="MS Convocation" style="width:300px;height:250px;" loading="lazy">
+            </a>
+            <p style="font-size:small">MS Convocation Picture</p>
+          </td>
+          <td style="padding:10px;">
+            <a href="images/gatech degree.jpeg" target="_blank">
+              <img src="images/gatech degree.jpeg" alt="Gatech Degree" style="width:300px;height:250px;" loading="lazy">
+            </a>
+            <p style="font-size:small">Gatech Degree Certificate</p>
+          </td>
+          <td style="padding:10px;">
+            <a href="https://drive.google.com/file/d/1TBAg6S4ulhyARmhU4gbGXx6fyZ4A_Xe8/view?usp=sharing" target="_blank">
+              <img src="images/MS_transcript.png" alt="MS Transcript" style="width:300px;height:250px;" loading="lazy">
+            </a>
+            <p style="font-size:small">MS Transcript</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 
   <!-- Habib University -->
   <tr>
@@ -690,10 +760,9 @@
 
   <!-- Commencement Picture and Award Certificates in the Same Line -->
   <tr>
-    <td colspan="2" style="padding:10px;vertical-align:middle;text-align:center;">
+    <td colspan="2" style="padding:10px;text-align:center;">
       <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
         <tr>
-          <!-- Commencement Picture -->
           <td style="padding:10px">
             <img src="images/BS Convocation.jpg" alt="BS Convocation" style="width:300px;height:auto;" loading="lazy">
             <p style="font-size:small">Convocation Picture</p>
@@ -718,9 +787,29 @@
           </td>
         </tr>
       </table>
+      <table style="width:100%;border:0px;border-spacing:0px;text-align:center;">
+
+        <!-- Degree and Transcript Images -->
+        <tr>
+          <td style="padding:10px;">
+            <a href="https://drive.google.com/file/d/1Xv9-x0FBuS84JGPubWx2u-x_ryin1FXS/view?usp=sharing" target="_blank">
+              <img src="images/BS_degree.png" alt="BS Degree" style="width:300px;height:auto;" loading="lazy">
+            </a>
+            <p style="font-size:small">BS Degree Certificate</p>
+          </td>
+
+          <td style="padding:10px;">
+            <a href="https://drive.google.com/file/d/1Xv5OevGZpx3fkcbLnebX85Wbnm9YK-sG/view?usp=sharing" target="_blank">
+              <img src="images/BS_transcript.png" alt="BS Transcript" style="width:300px;height:auto;" loading="lazy">
+            </a>
+            <p style="font-size:small">BS Transcript</p>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
+
 
 <!-- Teaching Experience Section -->
 <table id="teaching" style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;">
@@ -740,6 +829,20 @@
     <td style="padding:10px;width:35%;vertical-align:top; text-align:right">
       January 2023 - May 2024 <br>
       Spring and Fall 2023, and Spring 2024.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding:10px;width:65%;vertical-align:top">
+      <strong>Lab Instructor</strong><br>
+      <strong>Habib University</strong><br>
+      Basic Electronics <br> 
+      Introductory Physocs <br> 
+
+    </td>
+    <td style="padding:10px;width:35%;vertical-align:top; text-align:right">
+      July 2021 - December 2021<br>
+
     </td>
   </tr>
 
