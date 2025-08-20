@@ -133,3 +133,38 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* --- Affiliation logos row (override) --- */
+.affiliations {
+  display: flex;            /* put items in a row */
+  flex-wrap: nowrap;        /* keep Borderless on the same line */
+  gap: 12px;                /* space between logos */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;         /* if it ever overflows, allow horizontal scroll */
+}
+
+.affiliations li {
+  display: inline-flex;     /* keeps each logo neatly centered */
+  align-items: center;
+  justify-content: center;
+}
+
+.affiliations img {
+  height: 56px;             /* normalize sizes so they line up nicely */
+  width: auto;
+  display: block;
+}
+
+/* Let them wrap only on small screens */
+@media (max-width: 560px) {
+  .affiliations { flex-wrap: wrap; }
+}
+
+/* Final hard override to suppress any focus/target outlines (incl. Firefox/iframes) */
+*,*:focus,*:active,*:focus-visible{outline:0!important;box-shadow:none!important}
+button::-moz-focus-inner{border:0!important}
+a:focus,button:focus,input:focus,select:focus,textarea:focus,iframe:focus,video:focus,object:focus,embed:focus{outline:0!important}
+section:target,[id]:target{outline:0!important}
