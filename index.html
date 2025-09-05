@@ -442,6 +442,42 @@
       <section id="projects" class="card" aria-labelledby="projects-heading">
         <h2 id="projects-heading">Projects</h2>
 
+
+
+        <article class="entry" data-tags="CV Robotics">
+          <header>
+            <h3 class="entry-title">LLM-Based Path Planning in Grid Worlds: Local and Global Policies vs A* Baseline</h3>
+            <p class="entry-meta"><em> LLMs, A* Search, Hybrid Planning, Grid Navigation </em></p>
+          </header>
+          <p>Working on this project to understand and study how LLMs can be used for path planning. Current findings are that vanilla local policies achieve around 60% success on A*-solvable cases, while vanilla global one-shot planning reaches only about 25% and degrades more quickly as obstacle density increases. These initial results highlight the relative resilience of local prompting, but the work remains ongoing. I am systematically exploring improvements through richer local contexts (e.g., 5×5 windows, clearance features), prompt refinements (few-shots, ranking), and hybridization with classical priors (subgoal induction, A* cost-to-go). The broader goal is to examine how far prompt engineering and minimal feature additions can push LLM-based planning toward reliable performance, and to assess the feasibility of such methods for robotic path planning in more realistic settings.</p>
+          <p class="entry-meta"><em> This project is currently ongoing and further updates will be made as I progress.</em></p>
+
+          <div class="media-row" style="display:block;">
+            <figure style="margin-bottom: 2em;">
+              <img src="images/comparison_21.png"
+                   srcset="images/comparison_21.png 300w, images/comparison_21.png 600w"
+                   sizes="(max-width: 700px) 90vw, 600px"
+                   alt="Comparison of Global, Local and A* Policy with 21 random obstacles"
+                   loading="lazy" decoding="async">
+              <figcaption>Comparison of Global, Local and A* Policy with 21 random obstacles</figcaption>
+            </figure>
+          
+            <figure style="margin-bottom: 2em;">
+              <img src="images/summary_dual.png"
+                   srcset="images/summary_dual.png 300w, images/summary_dual.png 600w"
+                   sizes="(max-width: 700px) 90vw, 600px"
+                   alt="Aggregate Results Summary"
+                   loading="lazy" decoding="async">
+              <figcaption>Aggregate Results Summary</figcaption>
+            </figure>
+          </div>
+          
+          <div class="resources">
+            <a class="resource" href="https://drive.google.com/file/d/1nLylP_ADnhbF5E9aqVWqI_i2cX0_MuyO/view?usp=sharing" target="_blank" rel="noopener" aria-label="Open project report"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Initial Report</span></a>
+          </div>
+        </article>
+
+
         <article class="entry" data-tags="Robotics RL">
           <header>
             <h3 class="entry-title">Motion Planning for 3-Link Robot Arm</h3>
